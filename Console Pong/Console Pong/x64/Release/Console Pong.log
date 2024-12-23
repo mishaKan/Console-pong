@@ -1,0 +1,7 @@
+﻿  main.cpp
+F:\c++\Console Pong\Console Pong\main.cpp(27,6): warning C4101: grid: неиспользованная локальная переменная
+  Создание кода
+  Previous IPDB not found, fall back to full compilation.
+  All 120 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  Console Pong.vcxproj -> F:\c++\Console Pong\x64\Release\Console Pong.exe
