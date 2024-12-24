@@ -1,3 +1,0 @@
-﻿  main.cpp
-F:\c++\Console Pong\Console Pong\main.cpp(32,6): warning C4101: grid: неиспользованная локальная переменная
-  Console Pong.vcxproj -> F:\c++\Console Pong\x64\Debug\Console Pong.exe
