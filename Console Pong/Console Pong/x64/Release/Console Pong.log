@@ -1,5 +1,0 @@
-﻿  main.cpp
-F:\c++\Console-pong\Console Pong\Console Pong\main.cpp(29,24): error C2065: VK_LEFT: необъявленный идентификатор
-F:\c++\Console-pong\Console Pong\Console Pong\main.cpp(29,7): error C3861: GetAsyncKeyState: идентификатор не найден
-F:\c++\Console-pong\Console Pong\Console Pong\main.cpp(33,29): error C2065: VK_RIGHT: необъявленный идентификатор
-F:\c++\Console-pong\Console Pong\Console Pong\main.cpp(33,12): error C3861: GetAsyncKeyState: идентификатор не найден
