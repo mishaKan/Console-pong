@@ -1,23 +1,41 @@
-#include <iostream>
+﻿#include <iostream>
 #include <thread>
 #include <chrono>
+#include <random>
 #include <Windows.h>
 #define nl frame.append("\n");
 using namespace std;
 class Ball
 {
 public:
-	int radius;
 	int posX = 35;
-	int posY = 5;
-	int velocity[2] = {1,-1 };
+	int posY = 10;
+	int velocity[2] = {1,-1};
+	void updateball()
+	{
+		posX += velocity[0];
+		posY += velocity[1];
+		this_thread::sleep_for(chrono::milliseconds(50));
+	}
 };
 class Board
 {
 public:
 	int posX = 20;
 	int posY = 18;
+	void updateboard()
+	{
+		if (GetAsyncKeyState(VK_LEFT) != 0)
+		{
+			posX -= 2;
+		}
+		else if (GetAsyncKeyState(VK_RIGHT) != 0)
+		{
+			posX += 2;
+		}
+	}
 };
+
 int main()
 {
 	Board board;
@@ -26,24 +44,13 @@ int main()
 	const int lenght = 40;
 	int grid[lenght][height];
 	string frame = "";
-	cout << "gameSpeed recomended 50";
-	int newframetime;
-	cin >> newframetime;
-	cout << "slovly ball recomended 4";
-	int slowlyball = 4; // only even and positive numbers.
-	cin >> slowlyball;
-	int slowlyballcur = 0;
-	
 	while (true)
 	{
-		if (GetAsyncKeyState(VK_LEFT) != 0)
-		{
-			board.posX -= 1;
-		}
-		else if (GetAsyncKeyState(VK_RIGHT) != 0)
-		{
-			board.posX += 1;
-		}
+		thread boardthread(&Board::updateboard, &board);
+		thread ballthread(&Ball::updateball,&ball);
+		ballthread.join();
+		boardthread.join();
+		
 		if (board.posX - 2 <= 0)
 		{
 			board.posX = lenght - 4;
@@ -52,25 +59,10 @@ int main()
 		{
 			board.posX = 3;
 		}
-		if (slowlyballcur == 0)
-		{
-			ball.posX += ball.velocity[0];
-			ball.posY += ball.velocity[1];
-			slowlyballcur++;
-		}
-		else if (slowlyballcur < slowlyball)
-		{
-			slowlyballcur++;
-		}
-		else
-		{
-			slowlyballcur = 0;
-		}
 		if (ball.posY >= height)
 		{
 			ball.posY = 4;
 		}
-
 		for (int y = 0;y < height;y++)
 		{
 			for (int x = 0;x < lenght;x++)
@@ -105,7 +97,7 @@ int main()
 				}
 				else if (y == height - 1)
 				{
-					frame.append("#");
+					frame.append("X");
 				}
 				else
 				{
@@ -116,7 +108,6 @@ int main()
 		}
 		cout << frame;
 		frame = "";
-		std::this_thread::sleep_for(std::chrono::milliseconds(newframetime));
-
-	}	
+	}
+	return 0;
 }

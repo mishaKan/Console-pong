@@ -1,10 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "F:\\c\u002B\u002B\\Console Pong\\",
+  "WorkspaceRootPath": "F:\\c\u002B\u002B\\Console-pong\\Console Pong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DEB2D536-0038-4090-81C1-D5A6A7EDB4F9}|Console Pong\\Console Pong.vcxproj|F:\\c\u002B\u002B\\Console Pong\\Console Pong\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{DEB2D536-0038-4090-81C1-D5A6A7EDB4F9}|Console Pong\\Console Pong.vcxproj|F:\\c\u002B\u002B\\Console-pong\\Console Pong\\Console Pong\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DEB2D536-0038-4090-81C1-D5A6A7EDB4F9}|Console Pong\\Console Pong.vcxproj|solutionrelative:Console Pong\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\thread||{3B902123-F8A7-4915-9F01-361F908088D0}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,17 +17,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "thread",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\thread",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.42.34433\\include\\thread",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAUwGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-12-24T13:40:33.101Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "F:\\c\u002B\u002B\\Console Pong\\Console Pong\\main.cpp",
+              "DocumentMoniker": "F:\\c\u002B\u002B\\Console-pong\\Console Pong\\Console Pong\\main.cpp",
               "RelativeDocumentMoniker": "Console Pong\\main.cpp",
-              "ToolTip": "F:\\c\u002B\u002B\\Console Pong\\Console Pong\\main.cpp",
+              "ToolTip": "F:\\c\u002B\u002B\\Console-pong\\Console Pong\\Console Pong\\main.cpp",
               "RelativeToolTip": "Console Pong\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-23T12:59:38.223Z",
               "EditorCaption": ""
